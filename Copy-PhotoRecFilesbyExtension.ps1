@@ -16,17 +16,17 @@ By default OverWriteDuplicated is set to False.
 .PARAMETER CustomFileFilter
 Is possible to set a filter to reorganize only a type of file. The filter must start with a * such as *jpg
 .EXAMPLE
-Copy-PhotoRecFilesbyExtension -RootPhotoRecFolder G:\PhotoRec\* -RootDestinationFolder H:\PhotoOrderedbyExtension
+.\Copy-PhotoRecFilesbyExtension.ps1 -RootPhotoRec G:\PhotoRec\* -RootDestFolder H:\PhotoOrderedbyExtension
 .EXAMPLE
-Copy-PhotoRecFilesbyExtension -RootPhotoRecFolder G:\PhotoRec\* -RootDestinationFolder H:\PhotoOrderedbyExtension -OverWriteDuplicated $True
+.\Copy-PhotoRecFilesbyExtension.ps1 -RootPhotoRec G:\PhotoRec\* -RootDestFolder H:\PhotoOrderedbyExtension -OverWriteDuplicated $True
 
 Any file found in the destination folder with the same name is overwritten
 .EXAMPLE
-Copy-PhotoRecFilesbyExtension -RootPhotoRecFolder G:\PhotoRec\* -RootDestinationFolder H:\PhotoOrderedbyExtension -CustomFileFilter *mp3
+.\Copy-PhotoRecFilesbyExtension.ps1 -RootPhotoRec G:\PhotoRec\* -RootDestFolder H:\PhotoOrderedbyExtension -CustomFileFilter *mp3
 
 In this example only MP3 files will be copied from the source folder to the destination. By default any file type is copied and reorganized.
 .EXAMPLE
-Copy-PhotoRecFilesbyExtension -RootPhotoRecFolder G:\PhotoRec\* -RootDestinationFolder H:\PhotoOrderedbyExtension -CustomFileFilter "*mp4","*avi"
+.\Copy-PhotoRecFilesbyExtension.ps1 -RootPhotoRec G:\PhotoRec\* -RootDestFolder H:\PhotoOrderedbyExtension -CustomFileFilter "*mp4","*avi"
 
 In this example only MP4 and AVI files will be copied from the source folder to the destination. Enclose with double quote and separate with a comma any extension required; don't forget the *. 
 .LINK
